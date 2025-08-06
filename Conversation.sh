@@ -13,7 +13,7 @@ Well, you know me. I think big. But you? Rockets to Mars? Electric everything? T
 echo "$PERSON2:
 One step at a time. Let's get Starship fully operational first. But yeah, a space hotel? Not impossible."
 
-echo $PERSON1:
+echo "$PERSON1:
 Let me know when it’s time. I’ll bring the branding—you bring the rockets!"
 
 
