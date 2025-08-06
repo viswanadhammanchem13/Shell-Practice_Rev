@@ -1,7 +1,7 @@
 #!/bin/bash
 
-PERSON1="Donald Trump"
-PERSON2="Elon Musk"
+PERSON1="Bramha"
+PERSON2="Ali"
 
 echo "$PERSON1: Hey $PERSON2! Great to see you. You're doing fantastic things—tremendous, really. Space, cars, Twitter—nobody's doing it like you."
 
