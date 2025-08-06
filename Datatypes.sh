@@ -7,10 +7,10 @@ Number2=300
 Sum=$((Number1+Number2))
 echo "The  addition of $Number1 and $Number2 is: $Sum"
 Substraction=$((Number1-Number2))
-echo "The Subtraction of $Number1 and $NUmber2 is:$Substraction"
+echo "The Subtraction of $Number1 and $Number2 is:$Substraction"
 Multiplication=$((Number1*Number2))
-echo "The Multiplication of $Number1 and $NUmber2 is:$Multiplication"
+echo "The Multiplication of $Number1 and $Number2 is:$Multiplication"
 Divison=$((Number1/Number2))
-echo "The Divison of $Number1 and $NUmber2 is:$Divison"
+echo "The Divison of $Number1 and $Number2 is:$Divison"
 
 echo "The Program stopped at:$Date"
