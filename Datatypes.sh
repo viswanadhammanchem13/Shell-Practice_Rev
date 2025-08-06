@@ -1,6 +1,14 @@
 #!/bin/bash
+Date=$(date)
+echo "The Program Executed at:$Date"
 Number1=1000
 Number2=300
 
 Sum=$((Number1+Number2))
-echo "The  addition $Number1 and $Number2 is: $Sum"
+echo "The  addition of $Number1 and $Number2 is: $Sum"
+Substraction=$((Number1-Number2))
+echo "The Subtraction of $Number1 and $NUmber2 is:$Subtraction"
+Multiplication=$((Number1+Number2))
+echo "The Multiplication of $Number1 and $NUmber2 is:$Multiplication"
+Divison=$((Number1/Number2))
+echo "The Divison of $Number1 and $NUmber2 is:$Divison"
