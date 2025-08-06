@@ -1,6 +1,8 @@
 #!/bin/bash
+
 PERSON1=Donald Trump
 PERSON2=Elon Musk
+
 echo "$PERSON1: Hey $PERSON2! Great to see you. You're doing fantastic things—tremendous, really. Space, cars, Twitter—nobody's doing it like you."
 
 echo "$PERSON2: Thanks, $PERSON1. Good to see you too. You’ve definitely left your mark—big headlines, big moves."
