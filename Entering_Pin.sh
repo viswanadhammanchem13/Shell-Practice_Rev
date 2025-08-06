@@ -1,6 +1,6 @@
 #!/bin/bash
-echo "Enter your $1:"
+echo "Enter your Pin:"
 
-read Pin
+read PIN
 
-echo "Your $1 is: "
+echo "Your pin is: "
