@@ -11,7 +11,7 @@ echo "$PERSON1:
 Well, you know me. I think big. But you? Rockets to Mars? Electric everything? That's huge. Maybe we should build a hotel on Mars—Trump Galactic!"
 
 echo "$PERSON2:
-One step at a time. Let’s get Starship fully operational first. But yeah, a space hotel? Not impossible."
+One step at a time. Let's get Starship fully operational first. But yeah, a space hotel? Not impossible."
 
 echo $PERSON1:
 Let me know when it’s time. I’ll bring the branding—you bring the rockets!"
