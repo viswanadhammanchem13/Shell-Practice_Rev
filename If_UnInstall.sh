@@ -12,10 +12,6 @@ dnf list installed mysql
 if [ $? -eq 0 ]
 then
     echo "My SQL is  Installed..."
-    
-else
-    echo "My SQL is not installed.... No issue"
-    exit 1
     dnf remove mysql -y
     if [ $? -eq 0 ]
     then
@@ -24,4 +20,9 @@ else
         echo "UnInstallation is failed"
         exit 1
     fi
+    
+else
+    echo "My SQL is not installed.... No issue"
+    exit 1
+    
 fi
