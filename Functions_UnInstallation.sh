@@ -42,9 +42,9 @@ fi #Condition Ends
 dnf list installed python3 #Checks whether Python3 Package is installed or not
 if [ $? -eq 0 ] #Checks If Exit code equls to Zero, Yes
 then #Enter into Loop
-    echo "Python is Installed...Going to Uninstal..." #Prints this messages on Screen
+    echo "Python is Installed...Going to Uninstall..." #Prints this messages on Screen
     dnf remove python3 -y #Un Install Python Package
-    Validate $? "nginx" #Calls Validate Function and checks the status
+    Validate $? "Python" #Calls Validate Function and checks the status
 else #Checks If Exit code != Zero, No
     echo "Python is Already Uninstalled..." #Prints this messages on Screen
 fi #Condition Ends
