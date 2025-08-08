@@ -33,7 +33,7 @@ dnf list installed nginx #Checks whether Nginx Package is installed or not
 if [ $? -eq 0 ] #Checks If Exit code equls to Zero, Yes
 then #Enter into Loop
     echo "Nginx is Installed... Going to Uninstall..." #Prints this messages on Screen
-    dnf romove nginx -y #Un Install Nginx Package
+    dnf remove nginx -y #Un Install Nginx Package
     Validate $? "nginx" #Calls Validate Function and checks the status
 else #Checks If Exit code != Zero, No
     echo "Nginx is Already Uninstalled..." #Prints this messages on Screen
