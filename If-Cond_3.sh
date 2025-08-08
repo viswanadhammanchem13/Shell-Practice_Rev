@@ -3,7 +3,7 @@
 USERID=$(id -u)
 if [ $USERID -ne 0 ]
 then
-    echo " Please proceed With Installation"
+    echo " Please proceed the Installation with sudo"
 else
-    echo "Please proceed the Installation with sudo access"
+    echo "Please proceed the Installation with"
 fi
