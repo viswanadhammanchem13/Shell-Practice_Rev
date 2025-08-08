@@ -34,7 +34,7 @@ dnf list installed nginx #Checks whether Nginx Package is installed or not
 if [ $? -eq 0 ] #Checks If Exit code equls to Zero, Yes
 then #Enter into Loop
     echo "Nginx is already Installed..." #Prints this messages on Screen
-    exit 1
+    exit 0
 else #Checks If Exit code != Zero, No
     echo "Nginx is not installed Going to install.." #Prints this messages on Screen
     dnf install nginx -y #Install Nginx Package
