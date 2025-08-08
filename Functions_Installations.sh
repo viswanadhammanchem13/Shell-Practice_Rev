@@ -10,9 +10,9 @@ fi #Condition Ends
 Validate (){ #Function Definition
     if [ $1 -eq 0 ] #Checks If Exit code equls to Zero, Yes
     then #Enter into Loop
-        echo "Installation is suceefull" #Prints this messages on Screen
+        echo "$2 Installation is suceefull" #Prints this messages on Screen
     else #Checks If Exit code != Zero, No
-        echo "Installation is failed" #Prints this messages on Screen
+        echo "$2 Installation is failed" #Prints this messages on Screen
         exit 1 #Condition Exits and Entire Script Fails.
     fi #Condition Ends
 
@@ -20,10 +20,10 @@ Validate (){ #Function Definition
 dnf list installed mysql #Checks whether My SQL Package is installed or not
 if [ $? -eq 0 ] #Checks If Exit code equls to Zero, Yes
 then #Enter into Loop
-    echo "My SQL is already Installed..." #Prints this messages on Screen
+    echo "$2 is already Installed..." #Prints this messages on Screen
     exit 1 #Condition Exits and Entire Script Fails.
 else #Checks If Exit code != Zero, No
-    echo "My SQL is not installed Going to install.." #Prints this messages on Screen
+    echo "$2 is not installed Going to install.." #Prints this messages on Screen
 
     dnf install mysql -y #Install Mysql Package
     Validate $? "mysql" #Calls Validate Function and checks the status
@@ -33,10 +33,10 @@ fi #Condition Ends
 dnf list installed nginx #Checks whether Nginx Package is installed or not
 if [ $? -eq 0 ] #Checks If Exit code equls to Zero, Yes
 then #Enter into Loop
-    echo "Nginx is already Installed..." #Prints this messages on Screen
+    echo "$2 is already Installed..." #Prints this messages on Screen
     exit 1 #Condition Exits and Entire Script Fails.
 else #Checks If Exit code != Zero, No
-    echo "Nginx is not installed Going to install.." #Prints this messages on Screen
+    echo "$2 is not installed Going to install.." #Prints this messages on Screen
 
     dnf install nginx -y #Install Nginx Package
     Validate $? "nginx" #Calls Validate Function and checks the status
@@ -46,10 +46,10 @@ fi #Condition Ends
 dnf list installed python3 #Checks whether Python3 Package is installed or not
 if [ $? -eq 0 ] #Checks If Exit code equls to Zero, Yes
 then #Enter into Loop
-    echo "Python is already Installed..." #Prints this messages on Screen
+    echo "$2 is already Installed..." #Prints this messages on Screen
     exit 1 #Condition Exits and Entire Script Fails.
 else #Checks If Exit code != Zero, No
-    echo "Python is not installed Going to install.." #Prints this messages on Screen
+    echo "$2 is not installed Going to install.." #Prints this messages on Screen
     dnf install python3 -y #Install Python Package
     Validate $? "nginx" #Calls Validate Function and checks the status
 fi
