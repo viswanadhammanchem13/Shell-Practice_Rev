@@ -6,5 +6,5 @@ echo "Present Working Directory:$PWD"
 echo  "Home Directory : $HOME"
 echo "Current User": $USER"
 echo "Current PID: $$"
-sleep 10 &
+sleep 10&
 echo "Current Background PID: $!"
