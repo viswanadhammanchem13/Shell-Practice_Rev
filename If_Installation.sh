@@ -8,11 +8,11 @@ then
 else
     echo "Please proceed the Installation"
 fi
-dnf install mysqlhelloooooo -y
+dnf install mysqloooooo -y
 if [ $? -eq 0 ]
 then
      echo "Installation is suceefull"
 else
     echo "Installation is failed"
-    #exit 1
+    exit 1
 fi
