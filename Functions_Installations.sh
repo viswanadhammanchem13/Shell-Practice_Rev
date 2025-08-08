@@ -29,6 +29,7 @@ else #Checks If Exit code != Zero, No
     Validate $? "mysql" #Calls Validate Function and checks the status
     
 fi #Condition Ends
+
 dnf list installed nginx #Checks whether Nginx Package is installed or not
 if [ $? -eq 0 ] #Checks If Exit code equls to Zero, Yes
 then #Enter into Loop
@@ -41,6 +42,7 @@ else #Checks If Exit code != Zero, No
     Validate $? "nginx" #Calls Validate Function and checks the status
     
 fi #Condition Ends
+
 dnf list installed python3 #Checks whether Python3 Package is installed or not
 if [ $? -eq 0 ] #Checks If Exit code equls to Zero, Yes
 then #Enter into Loop
