@@ -5,5 +5,5 @@ if [ $USERID -ne 0 ]
 then
     echo " Please proceed the Installation with sudo"
 else
-    echo "Please proceed the Installation with"
+    echo "Please proceed the Installation"
 fi
