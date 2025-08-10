@@ -38,7 +38,7 @@ do
         else #Checks If Exit code != Zero, No
             echo -e "$R $package is not installed Going to install.. $N" | tee -a $LOG_FILE #Prints this messages on Screen
             dnf install $package -y  &>>$LOG_FILE #Install Mysql Package
-            Validate $? "MYSQL" #Calls Validate Function and checks the status
+            Validate $? $package #Calls Validate Function and checks the status
             
         fi #Condition Ends
 
