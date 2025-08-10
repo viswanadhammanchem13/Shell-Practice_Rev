@@ -4,11 +4,11 @@ R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
-LOGS_Folder="/var/log/Shell Script logs"
+LOGS_Folder="/var/log/ShellScriptlogs"
 SCRIPT_NAME=$(echo $0 | cut -d "."f1)
 LOG_FILE="$LOGS_Folder/SCRIPT_NAME.log"
 mkdir -p $LOGS_FOlder
-
+echo "Script Executed at:$(date)" &>>$LOG_FILE
 if [ $USERID -ne 0 ] #Checks Whether UID is = 0 or not
 then #!= 0 Enter into Loop
     echo -e "$R Error:Please proceed the Installation with sudo $N" &>>$LOG_FILE #Prints this messages on Screen
