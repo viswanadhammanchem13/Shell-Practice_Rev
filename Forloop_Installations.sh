@@ -30,7 +30,7 @@ Validate (){ #Function Definition
 }
 
 #for package in ${PACKAGES[@]}
-for package in $@
+for package in $@ #Pasing I/P as arguments
 do
     dnf list installed $package &>>$LOG_FILE #Checks whether My SQL Package is installed or not
         if [ $? -eq 0 ] #Checks If Exit code equls to Zero, Yes
