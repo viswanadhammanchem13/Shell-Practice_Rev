@@ -15,9 +15,9 @@ fi #Condition Ends
 Validate (){ #Function Definition
     if [ $1 -eq 0 ] #Checks If Exit code equls to Zero, Yes
     then #Enter into Loop
-        echo -e "$G $2 Installation is suceefull $N" #Prints this messages on Screen
+        echo -e "$G Installation of $2 is suceefull $N" #Prints this messages on Screen
     else #Checks If Exit code != Zero, No
-        echo -e " $R $2 Installation is failed $N" #Prints this messages on Screen
+        echo -e " $R Installation of $2 is failed $N" #Prints this messages on Screen
         exit 1 #Condition Exits and Entire Script Fails.
     fi #Condition Ends
 
@@ -30,7 +30,7 @@ then #Enter into Loop
 else #Checks If Exit code != Zero, No
     echo -e "$R MYSQL is not installed Going to install.. $N" #Prints this messages on Screen
     dnf install mysql -y #Install Mysql Package
-    Validate $? "mysql" #Calls Validate Function and checks the status
+    Validate $? "MYSQL" #Calls Validate Function and checks the status
     
 fi #Condition Ends
 
@@ -41,7 +41,7 @@ then #Enter into Loop
     else #Checks If Exit code != Zero, No
     echo -e "$R Nginx is not installed Going to install.. $N" #Prints this messages on Screen
     dnf install nginx -y #Install Nginx Package
-    Validate $? "nginx" #Calls Validate Function and checks the status
+    Validate $? "Nginx" #Calls Validate Function and checks the status
     
 fi #Condition Ends
 
@@ -52,7 +52,7 @@ then #Enter into Loop
 else #Checks If Exit code != Zero, No
     echo -e "$R Python is not installed Going to install.. $N" #Prints this messages on Screen
     dnf install python3 -y #Install Python Package
-    Validate $? "nginx" #Calls Validate Function and checks the status
+    Validate $? "Python3" #Calls Validate Function and checks the status
 fi #Condition Ends
 
 dnf list installed nodejs #Checks whether Python3 Package is installed or not
@@ -62,5 +62,5 @@ then #Enter into Loop
 else #Checks If Exit code != Zero, No
     echo -e "$R Node JS is not installed Going to install.. $N" #Prints this messages on Screen
     dnf install nodejs -y #Install Python Package
-    Validate $? "nodejs" #Calls Validate Function and checks the status
+    Validate $? "Nodejs" #Calls Validate Function and checks the status
 fi #Condition Ends
