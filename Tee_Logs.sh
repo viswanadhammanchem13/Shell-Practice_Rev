@@ -34,7 +34,7 @@ then #Enter into Loop
     echo -e "$Y MySQL is already Installed... $N" | tee -a $LOG_FILE #Prints this messages on Screen
 else #Checks If Exit code != Zero, No
     echo -e "$R MYSQL is not installed Going to install.. $N" | tee -a $LOG_FILE #Prints this messages on Screen
-    dnf install mysql -y  | tee -a $LOG_FILE #Install Mysql Package
+    dnf install mysql -y  &>>$LOG_FILE #Install Mysql Package
     Validate $? "MYSQL" #Calls Validate Function and checks the status
     
 fi #Condition Ends
