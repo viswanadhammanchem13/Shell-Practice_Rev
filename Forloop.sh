@@ -6,6 +6,6 @@ do
     then
         echo " $i"
     else
-        echo " not even"
+        echo "$i not even"
     fi
 done
